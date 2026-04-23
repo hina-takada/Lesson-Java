@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CollectionSample {	
+public class CollectionSample {
 	public static void main(String[] args) {
 		//研修中の練習問題
 		//リスト
@@ -26,46 +26,44 @@ public class CollectionSample {
 		System.out.println(lists);
 		lists.remove(lists);
 		System.out.println(lists);
-		
+
 		//その他のメソッド
 		System.out.println(lists.size());
-		if(lists.isEmpty()) {
+		if (lists.isEmpty()) {
 			System.out.println("空");
 		}
 		System.out.println("ある");
-		
-		
+
 		//HashSet
 		Map<String, Integer> nameMap = new HashMap<String, Integer>();
 		nameMap.put("Bob", 1);
 		nameMap.put("Alice", 2);
 		nameMap.put("John", 2);
 		nameMap.put("Tom", 1);
-		
+
 		/*nullPo
 		 * int value = nameMap.get("Taro");*/
-		
+
 		//その他のメソッド
-		
-		
+
 		//まとめ問題
 		Map<String, Integer> shop = new HashMap<String, Integer>();
-		shop.put("りんご",100);
+		shop.put("りんご", 100);
 		shop.put("みかん", 80);
 		shop.put("バナナ", 120);
 		shop.put("いちご", 300);
-		
+
 		String fruit = "みかん";
-		if(fruit.equals("") || !shop.containsKey(fruit)) {
+		if (fruit.equals("") || !shop.containsKey(fruit)) {
 			System.out.println("申し訳ありません。その商品は取り扱っておりません");
-		}else {
+		} else {
 			System.out.println(shop.get(fruit) + "円です");
 		}
-		
+
 		/**********************************
 		 **************6章演習*************
 		 **********************************/
-		
+
 		//配列とリスト
 		/*3
 		String[] names = { "田中", "木村", "小道", "斎藤", "大久保" };
@@ -96,18 +94,24 @@ public class CollectionSample {
 		*/
 
 		/*2
-		 * List<String> animals =  Arrays.asList("いぬ","ねこ","さる","コアラ");
+	 	List<String> animals =  Arrays.asList("いぬ","ねこ","さる","コアラ");
 		String[] array = animals.toArray(new String[animals.size()]);
-		System.out.println(Arrays.toString(array));*/
+		
+		for(String element : array) {
+			System.out.println(element);
+		}
+		*/
 
 		/*1
-		 * Integer[] nums = {40,58,28,59};
-		 */
+		 Integer[] nums = {40,58,28,59};
+		
 		/*List変換時は,
-		 * Arraysを使うか、配列の型をListの対応する型にする
-		List<Integer> numList = Arrays.asList(nums);
-		System.out.println(numList);*/
-
+		  Arraysを使うか、配列の型をListの対応する型にする
+		List<Integer> numList =  Arrays.asList(nums);
+		System.out.println(numList);
+		*/
+		
+		
 		//ハッシュ
 		/*3
 		 * HashSet<String> lang = new HashSet<String>();
@@ -129,16 +133,17 @@ public class CollectionSample {
 		System.out.println(price.get("りんご") + "円");*/
 
 		/*1
-		 * Map<String, String> prefecture = new HashMap<>();
+		Map<String, String> prefecture = new HashMap<>();
 		prefecture.put("福岡県", "福岡市");
 		prefecture.put("千葉県", "千葉市");
 		prefecture.put("宮城県", "仙台");
 		prefecture.put("栃木県", "宇都宮市");
 		
-		for(Map.Entry<String,String> entry: prefecture.entrySet()) {
-			System.out.println(entry.getKey() + ":" + entry.getValue());
-		}*/
-
+		for(String key : prefecture.keySet()) {
+			System.out.println(key + ":" + prefecture.get(key));
+		}
+		*/
+		
 		//リスト
 		/*3************************
 		 * List<String> string = new LinkedList<>();
@@ -166,18 +171,23 @@ public class CollectionSample {
 		//コレクションとは
 
 		/*2
-		 * Set<Integer> num = new HashSet<>();
-		num.add(23);
-		num.add(40);
-		num.add(59);
-		num.add(57);
-		num.add(40);//重複用
-		System.out.println(num);*/
+		List<Integer> list = new ArrayList<>();
+		list.add(23);
+		list.add(40);
+		list.add(59);
+		list.add(57);
+		list.add(40);//重複用
+		
+		HashSet<Integer> set = new HashSet<Integer>();
+		
+		System.out.println(set);
+		*/
 
-		/*１リンゴ、バナナ、さくらんぼ
-		 * List<Integer> number = Arrays.asList(1,2,3,4,5);
+		/*１
+		List<Integer> number = Arrays.asList(1,2,3,4,5);
 		Collections.reverse(number);
-		System.out.println(number);*/
+		System.out.println(number);
+		*/
 	}
 
 }
