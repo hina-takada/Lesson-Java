@@ -10,7 +10,7 @@ public class IfExercises {
 		/***************
 		 ******if文*****
 		 ***************/
-		/*４*/
+		/*４
 		int age = sc.nextInt();
 		if(age < 0) {
 			System.out.println("0以上の数字を入力してください");
@@ -21,19 +21,19 @@ public class IfExercises {
 		}else {
 			System.out.println("500円");
 		}
+		*/
 		
 		
-		/*３(?)
-		 * int[] numbers = new int[3];
-		for(int i = 0; i < numbers.length;i++) {
-			numbers[i] = sc.nextInt();
+		/*３*/
+		     int a = sc.nextInt();
+		     int b = sc.nextInt();
+		     int c = sc.nextInt();
 			
-			if(!(numbers[i] <= 0)) {
+			if(a + b > c && a + c > b && b + c > a) {
 				System.out.println("この長さは有効");
 			}else {
 				System.out.println("この長さでは三角形は無理です");
 			}
-		}*/
 		
 		
 		
