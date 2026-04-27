@@ -6,13 +6,12 @@ public class Employee {
 	public Employee(int id) {
 		this.id = id;
 	}
-	
+	//ここあとできく。
 	@Override
 	public boolean equals(Object obj) {
 		if(this.id == ((Employee)obj).id) {
 			return true;
 		}
-		
 		return false;
 		
 	}
