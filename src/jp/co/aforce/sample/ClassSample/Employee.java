@@ -24,8 +24,8 @@ public class Employee {
 	}
 	
 	void raiseSalary(double percent) {
-		int raise = salary + (int)(salary * percent);
-		System.out.println(String.format("昇給後の給料:%,d円", raise));
+		/*int raise = salary + (int)(salary * percent);*/
+		salary += salary * percent / 100;
 	}
 	
 	
