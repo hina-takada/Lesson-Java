@@ -4,7 +4,7 @@ public class Car {
 	private String name;
 	
 	public Car() {
-		this.name = "日産";
+		this.name = "Unkown";
 	}
 	
 	public Car(String name) {
