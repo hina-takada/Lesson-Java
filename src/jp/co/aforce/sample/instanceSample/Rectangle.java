@@ -9,8 +9,7 @@ public class Rectangle {
 		this.height = hegiht;
 	}
 	
-	void area() {
-		int totalArea = height * width;
-		System.out.println(String.format("面積は、%d㎝", totalArea));
+	int area() {
+		return height * width;
 	}
 }

@@ -2,25 +2,29 @@ package jp.co.aforce.sample.instanceSample;
 
 public class Student {
 	private String name;
-	private int scoreMath;
-	private int scoreScience;
-	private int scoreEnglish;
+	private int[] scores;
 	
-	public Student(String name,int scoreMath,int scoreScience,int scoreEnglish) {
+	public Student(String name,int[] scores) {
 		this.name = name;
-		this.scoreMath = scoreMath;
-		this.scoreScience = scoreScience;
-		this.scoreEnglish = scoreEnglish;
+		this.scores = scores;
 	}
 	
-	void totalCalc() {
-		int total = scoreMath + scoreScience + scoreEnglish;
-		System.out.println("合計：" + total + "点");
+	String getName() {
+		return name;
 	}
 	
-	void avgCalc() {
-		int avg = (scoreMath + scoreScience + scoreEnglish) / 3;
-		System.out.println("平均:" + avg );
+	int totalCalc() {
+		int sum = 0;
+		for(int socre : scores) {
+			sum += socre;
+		}
+		return sum;
+		
+	}
+	
+	double avgCalc() {
+		return (double)totalCalc() / scores.length;
+		
 	}
 	
 }
