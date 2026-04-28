@@ -26,7 +26,7 @@ public class Rectangle implements Shape {
 	//キャスト
 	@Override
 	public void calc() {
-		int product = height * width;
+		/*int product = height * width;*/
 		
 	}
 	
