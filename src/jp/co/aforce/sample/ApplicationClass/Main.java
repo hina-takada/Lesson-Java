@@ -1,7 +1,5 @@
 package jp.co.aforce.sample.ApplicationClass;
 
-import java.awt.Button;
-
 public class Main {
 	//10章：クラスの応用Main
 	public static void main(String[] args) {
@@ -62,18 +60,6 @@ public class Main {
 		System.out.println(result);
 		
 		System.out.println("=====================");
-		
-		//10章：無名内部クラス
-		InnerClass inner = new InnerClass();
-		Thread thread = new Thread(inner);
-		thread.start();
-		
-		System.out.println("----------------------");
-		
-		//10章：無名内部クラス　問2
-		Button btu = new Button();
-		btu.addActionListener(inner);
-		
 		
 		System.out.println("=====================");
 		//10章　キャスト

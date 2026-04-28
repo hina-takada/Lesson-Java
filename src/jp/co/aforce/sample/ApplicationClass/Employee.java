@@ -6,13 +6,18 @@ public class Employee {
 	public Employee(int id) {
 		this.id = id;
 	}
-	//ここあとできく。
+	//
 	@Override
 	public boolean equals(Object obj) {
-		if(this.id == ((Employee)obj).id) {
+		if(this == obj)return true;
+		if(obj == null || getClass() != obj.getClass())return false;
+		Employee employee = (Employee)obj;
+		return id == employee.id;
+		
+		/*if(this.id == ((Employee)obj).id) {
 			return true;
 		}
-		return false;
+		return false;*/
 		
 	}
 }
