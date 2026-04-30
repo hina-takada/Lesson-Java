@@ -18,6 +18,6 @@ public class Student {
 	}
 
 	public void introduce() {
-		System.out.printf("名前は、%sです。学年は、%d年です。",name,grade);
+		System.out.printf("名前は、%sです。学年は、%d年です。\n",name,grade);
 	}
 }
