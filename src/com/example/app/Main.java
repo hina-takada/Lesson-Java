@@ -1,5 +1,6 @@
 package com.example.app;
 
+import static com.example.utils.Utility.*;
 import static java.lang.Math.*;
 
 import java.util.ArrayList;
@@ -13,7 +14,6 @@ import com.example.service.Service;
 import com.example.utils.BankAccount;
 import com.example.utils.Helper;
 import com.example.utils.MathUtils;
-import com.example.utils.Utility;
 
 public class Main {
 	public static void main(String[] args) {
@@ -47,10 +47,10 @@ public class Main {
 			System.out.println(animal);
 		}
 		
-		double Circle = Math.PI * Math.pow(3, 2);
+		double Circle = PI * Math.pow(3, 2);
 		System.out.println((int)Circle);
 		
-		Utility.greet();
+		greet();
 		
 		List<Integer> lists = new ArrayList<Integer>();
 		Random random = new Random();
@@ -59,9 +59,7 @@ public class Main {
 			lists.add(random.nextInt(20));
 		}
 		
-		for(int list : lists) {
-			System.out.print(list + ",");
-		}
+		System.out.println(lists);
 		
 		double r = sqrt(2);
 		System.out.println("\n" + r);

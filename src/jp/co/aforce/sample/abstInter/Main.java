@@ -4,7 +4,7 @@ package jp.co.aforce.sample.abstInter;
 public class Main {
 	public static void main(String[] args) {
 		//抽象クラス
-		//問1
+		//問2	
 		Car car = new Car();
 		car.move();
 		
@@ -46,6 +46,11 @@ public class Main {
 		LaserPrinter lp = new LaserPrinter();
 		lp.showStatus();
 		lp.print();
+		
+		//問6
+		CMessage c = new CMessage();
+		c.message();
+		
 		
 		//問7
 		Circle ci = new Circle();
